@@ -1,11 +1,11 @@
 Hello, this is the Library Management System for [Course/Section].
 Team members:
-• hamad (ID 202002524) (user: hamad321123) – Use Case 1: Book Management 
+• Hamad Turki Hamad Alammash (ID 202002524) (user: hamad321123) – Use Case 1: Book Management 
 • fawaz (ID 202106889) (user: Wfawaz) – Use Case 2: Member Management
-• Mohammed (ID 202208304) (user:moodythis) – Use Case 3: Borrow & Return
-• faris (ID 202011373) (user:ProjecTeam305) – Use Case 4: Reports & Notifications
+• Mohammed Husain Attiya  (ID 202208304) (user: moodythis) – Use Case 3: Borrow & Return
+• Faris Saqer Almajed (ID 202011373) (user: ProjecTeam305) – Use Case 4: Reports & Notifications
 
-Here is our Tasks Distribution Document showing the assignments and deliverables.
+Here is our Tasks Distribution Document, which shows the assignments and deliverables.
 Our repository has four branches named usecase-1-books, usecase-2-members, usecase-3-borrow-return, and usecase-4-reports.
 Each member will implement their use case and push commits to their branch.
 Thank you.
