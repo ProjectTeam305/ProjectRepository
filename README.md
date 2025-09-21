@@ -1,4 +1,4 @@
-Hello, this is the Library Management System for [Course/Section].
+Hello, this is the Library Management System for [ITSE305/01].
 Team members:
 • Hamad Turki Hamad Alammash (ID 202002524) (user: hamad321123) – Use Case 1: Book Management 
 • fawaz (ID 202106889) (user: Wfawaz) – Use Case 2: Member Management
