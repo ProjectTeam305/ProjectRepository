@@ -1,8 +1,8 @@
 Hello, this is the Library Management System for [Course/Section].
 Team members:
-• hamad (ID 202002524) (user: hamad321123) – Use Case 1: Book Management
+• hamad (ID 202002524) (user: hamad321123) – Use Case 1: Book Management 
 • fawaz (ID 202106889) (user: Wfawaz) – Use Case 2: Member Management
-• mohammed (ID 202208304) (user:moodythis) – Use Case 3: Borrow & Return
+• Mohammed (ID 202208304) (user:moodythis) – Use Case 3: Borrow & Return
 • faris (ID 202011373) (user:ProjecTeam305) – Use Case 4: Reports & Notifications
 
 Here is our Tasks Distribution Document showing the assignments and deliverables.
