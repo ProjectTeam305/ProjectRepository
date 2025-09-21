@@ -1,7 +1,7 @@
 Hello, this is the Library Management System for [ITSE305/01].
 Team members:
 • Hamad Turki Hamad Alammash (ID 202002524) (user: hamad321123) – Use Case 1: Book Management 
-• fawaz (ID 202106889) (user: Wfawaz) – Use Case 2: Member Management
+• Fawaz Abdo Alhelmi (ID 202106889) (user: Wfawaz) – Use Case 2: Member Management
 • Mohammed Husain Attiya  (ID 202208304) (user: moodythis) – Use Case 3: Borrow & Return
 • Faris Saqer Almajed (ID 202011373) (user: ProjecTeam305) – Use Case 4: Reports & Notifications
 
