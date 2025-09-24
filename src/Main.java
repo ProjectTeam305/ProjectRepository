@@ -17,22 +17,18 @@ public class Main {
         switch (choice) {
             case 1:
                 System.out.println("Book Management Menu");
-                // Add, Edit, Delete, Search books
                 break;
 
             case 2:
                 System.out.println("Member Management Menu");
-                // Add, Edit, Delete, Search members
                 break;
 
             case 3:
                 System.out.println("Borrow & Return System Menu");
-                // Borrow book, Return book, Track due dates
                 break;
 
             case 4:
                 System.out.println("Reports & Notifications Menu");
-                // Show borrowed books, overdue, available books
                 break;
 
             case 5:
