@@ -1,9 +1,18 @@
+
+import presentation.BorrowUI;
+
 import java.util.Scanner;
 
+
+/**
+ * Main class for the Library Management System.
+ * Acts as the starting point for the application.
+ */
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice;
+        BorrowUI borrowUI = new BorrowUI();
 
         System.out.println("===== Library Management System =====");
         System.out.println("1. Book Management");
@@ -24,7 +33,7 @@ public class Main {
                 break;
 
             case 3:
-                System.out.println("Borrow & Return System Menu");
+                borrowUI.showMenu();  // ✅ Connected to your Borrow & Return
                 break;
 
             case 4:
