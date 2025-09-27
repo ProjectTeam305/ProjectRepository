@@ -3,7 +3,7 @@ package business;
 /**
  * BorrowService contains the business logic for borrowing and returning books.
  */
-public class BorrowService {
+public class borrowUI {
 
     public void borrowBook(String memberID, String ISBN) {
         System.out.println("Book with ISBN " + ISBN + " borrowed by member " + memberID);

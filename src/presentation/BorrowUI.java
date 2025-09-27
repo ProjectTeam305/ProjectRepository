@@ -1,17 +1,17 @@
 package presentation;
 
 import java.util.Scanner;
-import business.BorrowService;
+import business.borrowUI;
 
 /**
  * BorrowUI handles user interaction for the Borrow & Return System.
  */
 public class BorrowUI {
-    private BorrowService borrowService;
+    private borrowUI borrowUI;
     private Scanner sc;
 
     public BorrowUI() {
-        borrowService = new BorrowService();
+        borrowUI = new borrowUI();
         sc = new Scanner(System.in);
     }
 
@@ -31,21 +31,21 @@ public class BorrowUI {
                 String memberID = sc.next();
                 System.out.print("Enter Book ISBN: ");
                 String ISBN = sc.next();
-                borrowService.borrowBook(memberID, ISBN);
+                borrowUI.borrowBook(memberID, ISBN);
                 break;
 
             case 2:
                 System.out.print("Enter Book ISBN to return: ");
                 String returnISBN = sc.next();
-                borrowService.returnBook(returnISBN);
+                borrowUI.returnBook(returnISBN);
                 break;
 
             case 3:
-                borrowService.trackDueDates();
+                borrowUI.trackDueDates();
                 break;
 
             case 4:
-                borrowService.viewBorrowedBooks();
+                borrowUI.viewBorrowedBooks();
                 break;
 
             case 5:
