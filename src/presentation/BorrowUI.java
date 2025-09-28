@@ -7,8 +7,8 @@ import business.borrowUI;
  * BorrowUI handles user interaction for the Borrow & Return System.
  */
 public class BorrowUI {
-    private borrowUI borrowUI;
-    private Scanner sc;
+    private final borrowUI borrowUI;
+    private final Scanner sc;
 
     public BorrowUI() {
         borrowUI = new borrowUI();
