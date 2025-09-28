@@ -5,11 +5,11 @@ package business;
  */
 public class borrowUI {
 
-    public void borrowBook(String memberID, String ISBN) {
+    public void borrowBook(int memberID, int ISBN) {
         System.out.println("Book with ISBN " + ISBN + " borrowed by member " + memberID);
     }
 
-    public void returnBook(String ISBN) {
+    public void returnBook(int ISBN) {
         System.out.println("Book with ISBN " + ISBN + " returned.");
     }
 

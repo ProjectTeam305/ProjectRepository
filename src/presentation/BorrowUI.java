@@ -28,15 +28,15 @@ public class BorrowUI {
         switch (choice) {
             case 1:
                 System.out.print("Enter Member ID: ");
-                String memberID = sc.next();
+                int memberID = Integer.parseInt(sc.next());
                 System.out.print("Enter Book ISBN: ");
-                String ISBN = sc.next();
+                int ISBN = Integer.parseInt(sc.next());
                 borrowUI.borrowBook(memberID, ISBN);
                 break;
 
             case 2:
                 System.out.print("Enter Book ISBN to return: ");
-                String returnISBN = sc.next();
+                int returnISBN = Integer.parseInt(sc.next());
                 borrowUI.returnBook(returnISBN);
                 break;
 
