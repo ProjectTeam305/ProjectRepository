@@ -47,7 +47,7 @@ class Book {
     }
 }
 
-/**
+/**  
  * Represents a Loan record when a book is borrowed.
  * Includes ISBN, borrower, borrow date, due date, and status.
  */
