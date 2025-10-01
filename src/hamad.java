@@ -284,6 +284,7 @@ public class hamad {
     public static void main(String[] args) { new hamad().run(); }
 
     public static void showMenu() {
+        new hamad().run();
     }
 
     /**
