@@ -17,6 +17,7 @@ public class Main {
         switch (choice) {
             case 1:
                 System.out.println("Book Management Menu");
+                hamad.showMenu();
                 break;
 
             case 2:
