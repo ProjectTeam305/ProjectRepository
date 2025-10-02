@@ -6,7 +6,7 @@ package business;
 public class borrowUI {
 
     public void borrowBook(int memberID, int ISBN) {
-          System.out.println("Book with ISBN " + ISBN + " borrowed by member " + memberID);
+          System.out.println("Book with  ISBN " + ISBN + " borrowed by member " + memberID);
     }
 
     public void returnBook(int ISBN) {

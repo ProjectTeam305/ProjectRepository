@@ -22,7 +22,7 @@ public class BorrowUI {
         System.out.println("3. Track Due Dates");
         System.out.println("4. View Borrowed Books");
         System.out.println("5. Back to Main Menu");
-        System.out.print("Enter choice: ");
+        System.out.print("Enter choice:    ");
         int choice = sc.nextInt();
 
         switch (choice) {
