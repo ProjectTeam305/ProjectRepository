@@ -11,7 +11,7 @@ public class BorrowUI {
     private final Scanner sc;
 
     public BorrowUI() {
-        borrowUI = new borrowUI();
+        borrowUI = new borrowUI( );
         sc = new Scanner(System.in);
     }
 

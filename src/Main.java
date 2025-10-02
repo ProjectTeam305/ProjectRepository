@@ -19,7 +19,7 @@ public class Main {
         System.out.println("2. Member Management");
         System.out.println("3. Borrow & Return System");
         System.out.println("4. Reports & Notifications");
-        System.out.println("5. Exit");
+        System.out.println("5.    Exit");
         System.out.print("Enter your choice: ");
         choice = sc.nextInt();
 
