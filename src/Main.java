@@ -1,5 +1,10 @@
+import business.Reports;
+
 import java.util.Scanner;
 
+
+/// The Main class initiates the menu-driven program of the Library.
+/// It provides options according to the distributed use cases developed by each team member.
 public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -28,7 +33,7 @@ public class Main {
                 break;
 
             case 4:
-                System.out.println("Reports & Notifications Menu");
+                Reports.run();
                 break;
 
             case 5:

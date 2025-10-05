@@ -1,20 +1,20 @@
 package data;
 
-import java.awt.print.Book;
-import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Iterator;
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
 
+/// Data layer of the Reports use case, responsible for storage and retrieval of data abstractedly.
 public class DReports {
 
-    /// Temporary
-    private static ArrayList<Book> books = new ArrayList<>(20);
-
+    /// A set of book objects as value where ISBN is the key for the value.  {@code (currently dull)}
+    private static HashMap<Integer,BookTemp> books = new HashMap<>();
+    /// A list of books label as "available"
     private static HashSet<Integer> avList = new HashSet<>();
+    /// A list of books labeled as
     private static HashSet<Integer> borrList = new HashSet<>();
 
+    /// constructor generates dull items in the list for testing.
     public DReports(){
 
         for (int i = 0; i < 10; i++) {
@@ -37,6 +37,7 @@ public class DReports {
 //        borrList.add(88888888);
     }
 
+    /// takes book ISBN as parameter to label it as BORROWED.
     public void borrow(int ISPN){
 
 
@@ -48,6 +49,7 @@ public class DReports {
             }
     }
 
+    /// takes book ISBN as parameter to label it as AVAILABLE.
     public void avail(int ISPN){
 
 
@@ -62,24 +64,27 @@ public class DReports {
 //        }
     }
 
+    /// returns an iteration object of the current Borrowed books list.
     public Iterator<Integer> borrIter(){
 
         return borrList.iterator();
     }
 
+    /// returns the number of Borrowed books.
     public int getBorrSize(){
         return borrList.size();
     }
 
+    /// returns an Iterator object of the current Available books list.
     public Iterator<Integer> avIter(){
 
         return avList.iterator();
     }
 
+    /// returns the number of Available books.
     public int avSize(){
         return avList.size();
     }
 
-    /// not built yet
 
 }
