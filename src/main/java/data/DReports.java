@@ -17,7 +17,7 @@ public class DReports {
     /// constructor generates dull items in the list for testing.
     public DReports(){
 
-        for (int i = 0; i < 10; i++) {
+        for (int i = 1; i < 9; i++) {
             String t = "";
             for (int j = 0; j < 8; j++) {
                 t = t.concat("" + i);
@@ -82,7 +82,7 @@ public class DReports {
     }
 
     /// returns the number of Available books.
-    public int avSize(){
+    public int getAvSize(){
         return avList.size();
     }
 

@@ -7,11 +7,10 @@ import java.util.Scanner;
 /// Presentation layer of the Reports use case, responsible for input/output, validation of user inputs, and displaying processed data in a usable form.
 public class PReports {
     Scanner sc = new Scanner(System.in);
-    DReports data = new DReports();
-
+    static DReports data;
     /// empty constructor
-    public PReports(){
-
+    public PReports(DReports pass){
+        data = pass;
     }
 
     ///  Prints the Services menu and validates input.
@@ -60,7 +59,7 @@ public class PReports {
     public void AllAvailable(){
         Iterator<Integer> iter = data.avIter();
         System.out.println("All Available:\n");
-        for (int i = 0; i < data.avSize(); i++) {
+        for (int i = 0; i < data.getAvSize(); i++) {
             System.out.println(iter.next());
         }
     }

@@ -13,8 +13,8 @@ import presentation.PReports;
 ///
 /// 3)Show available books.
 public class Reports {
-    static PReports print = new PReports();
     static DReports data = new DReports();
+    static PReports print = new PReports(data);
 
     public static void run() {
 
