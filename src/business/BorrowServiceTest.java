@@ -9,11 +9,11 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class BorrowServiceTest {
 
-    private BorrowService borrowService;
+    private BorrowUI.BorrowService borrowService;
 
     @BeforeEach
     void setUp() {
-        borrowService = new BorrowService();
+        borrowService = new BorrowUI.BorrowService();
     }
 
     @Test
