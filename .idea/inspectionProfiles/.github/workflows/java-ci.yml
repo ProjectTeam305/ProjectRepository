@@ -10,18 +10,18 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout code
+      # Step 1: Checkout repository
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Set up Java
+      # Step 2: Set up JDK 21
       - name: Set up JDK
         uses: actions/setup-java@v3
         with:
-          java-version: '17'
+          java-version: '21'
           distribution: 'temurin'
 
-      # Step 3: Cache Maven dependencies (optional but recommended)
+      # Step 3: Cache Maven dependencies
       - name: Cache Maven packages
         uses: actions/cache@v3
         with:
