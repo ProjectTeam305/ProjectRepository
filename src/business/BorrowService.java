@@ -13,7 +13,7 @@ public class BorrowService {
     public boolean borrowBook(String memberID, String ISBN) {
         borrowedBooks.computeIfAbsent(memberID, k -> new ArrayList<>()).add(ISBN);
         dueDates.put(memberID + "_" + ISBN, "2025-10-31"); // Example due date
-        System.out.println("Book with ISBN " + ISBN + " borrowed by member " + memberID);
+        System.out.println("Book with ISBN " + ISBN + " borrowed by member " + memberID)
         return true;
     }
 
