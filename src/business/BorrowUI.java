@@ -1,6 +1,7 @@
 package business;
 
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 
 import java.util.*;
@@ -25,7 +26,7 @@ public class BorrowUI {
     public void viewBorrowedBooks() {
         System.out.println("Listing all borrowed books...");
     }
-
+/// /
     public void showMenu() {
         System.out.println("Showing menu...");
     }
@@ -57,7 +58,8 @@ public class BorrowUI {
         }
     }
 
-    static class BorrowUITest {
+    @Nested
+    class BorrowUITest {
 
         private BorrowUI borrowUI;
 

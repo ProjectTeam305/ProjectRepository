@@ -4,7 +4,7 @@ on:
   push:
     branches:
       - main
-      - Mohamed-usecase-3-borrow-return
+      - Mohamed-use-case-3-borrow-return
   pull_request:
     branches:
       - main
