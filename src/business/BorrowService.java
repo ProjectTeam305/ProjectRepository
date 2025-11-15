@@ -18,7 +18,7 @@ public class BorrowService {
     }
 
     /**
-     * Return a book for a member.
+     * Return book for a member.
      */
     public boolean returnBook(String memberID, String ISBN) {
         List<String> books = borrowedBooks.get(memberID);
