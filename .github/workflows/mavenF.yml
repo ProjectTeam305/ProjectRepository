@@ -11,11 +11,7 @@ name: Java CI with Maven
 on:
   push:
     branches: 
-    - "main"
-    - "uc4_reports"
-    - "Mohamed-usecase-3-borrow-return"
-    - "MemberManagement"
-    - "books"
+      - "**"
   pull_request:
     branches: [ "main" ]
 
