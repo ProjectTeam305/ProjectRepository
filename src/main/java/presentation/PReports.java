@@ -66,7 +66,7 @@ public class PReports {
 
     /// Takes books ISBN as input to validate its form using regular expression.
     public boolean validateISBN(int isbn){
-        if (!String.valueOf(isbn).matches("^\\d{8}$")){
+        if (!String.valueOf(isbn).matches("^\\d{9}$")){
             System.out.println("Error: passed isbn is falsely formatted\nisbn:" + isbn);
             return false;
         }
