@@ -1,3 +1,5 @@
+import business.Reports;
+
 import java.util.Scanner;
 
 
@@ -31,7 +33,7 @@ public class Main {
                 break;
 
             case 4:
-//                Reports.run();
+                Reports.run();
                 break;
 
             case 5:
