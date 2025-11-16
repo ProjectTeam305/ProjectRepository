@@ -1,6 +1,6 @@
 public class GitHubActionTest {
    public int add(int a, int b){
-       return a + b + 1;
+       return a + b;
    }
 
     public int subt(int a, int b){
