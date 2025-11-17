@@ -23,7 +23,7 @@ public class BorrowService {
     public boolean returnBook(String memberID, String ISBN) {
         List<String> books = borrowedBooks.get(memberID);
         if (books != null && books.remove(ISBN)) {
-            dueDates.remove(memberID + "_" + ISBN);
+            dueDates.remove(memberID + " _" + ISBN);
             System.out.println("Book with ISBN " + ISBN + " returned by member " + memberID);
             return true;
         }
