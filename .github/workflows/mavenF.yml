@@ -23,18 +23,9 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
-      - name: Cache Maven packages
-        uses: actions/cache@v3
-        with:
-          path: ~/.m2
-          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
-          restore-keys: |
-            ${{ runner.os }}-maven-
-
       - name: Build and run tests
         run: mvn clean verify --file pom.xml
 
-      # ✅ Optional: Fail intentionally
-      - name: Fail intentionally
-        if: github.ref != 'refs/heads/main' # Example condition
+      - name: Fail intentionally on non-main branches
+        if: github.ref != 'refs/heads/main'
         run: mvn verify -Dfail.build=true
