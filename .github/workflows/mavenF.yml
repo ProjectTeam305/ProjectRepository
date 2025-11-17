@@ -24,8 +24,5 @@ jobs:
       - name: Build and run tests with Maven
         run: mvn -B verify --file pom.xml
 
-      # ✅ Add this step to force failure
-      - name: Force failure intentionally
-        run: |
-          echo "Failing the workflow on purpose"
-          exit 1
+      - name: Force failure if needed
+        run: mvn validate && mvn exec:exec -Dexec.executable="bash" -Dexec.args="-c 'exit 1'"
