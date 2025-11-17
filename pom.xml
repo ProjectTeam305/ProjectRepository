@@ -40,6 +40,7 @@
             <!-- ✅ Enforcer plugin for intentional failure -->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId/>
 
                 <executions>
                     <execution>
