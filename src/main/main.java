@@ -69,7 +69,7 @@ public class main {
         void testmain() {
             // Simulate user input: choosing option 5 (Exit)
             String simulatedInput = "5\n";
-            ByteArrayInputStream inputStream = new ByeArrayInputStream(simulatedInput.getBytes());
+            ByteArrayInputStream inputStream = new ByteArrayInputStream(simulatedInput.getBytes());
             System.setIn(inputStream);
 
             // Capture system output

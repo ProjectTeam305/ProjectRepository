@@ -25,7 +25,7 @@ class BorrowServiceTest {
     @Test
     void returnBook() {
         borrowService.borrowBook("user123", "bookABC");
-        boolean result = borrowService.returnBook("user123", "bookABC");
+        boolean result = borrowService.returnBook("user23", "bookABC");
         assertTrue(result, "Book should be returned successfully");
     }
 
