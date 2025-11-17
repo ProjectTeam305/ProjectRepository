@@ -24,7 +24,7 @@ jobs:
           cache: maven
 
       - name: Build and run tests
-        run: mvn clean verify --file pom.xml
+        run: mvn clean verify  --file pom.xml
 
       - name: Fail intentionally on non-main branches
         if: github.ref != 'refs/heads/main'
