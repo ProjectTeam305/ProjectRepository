@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
  * Main class for the Library Management System.
  * Acts as the starting point for the application.
  */
-public class Main {
+public class main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int choice;
@@ -66,7 +66,7 @@ public class Main {
     class MainTest {
 
         @Test
-        void main() {
+        void testmain() {
             // Simulate user input: choosing option 5 (Exit)
             String simulatedInput = "5\n";
             ByteArrayInputStream inputStream = new ByteArrayInputStream(simulatedInput.getBytes());
@@ -78,13 +78,13 @@ public class Main {
             System.setOut(new PrintStream(outputStream));
 
             // Run the main method
-            Main.main(new String[]{});
+            main.main(new String[]{});
 
             // Restore original output stream
             System.setOut(originalOut);
 
             // Convert output to string and check expected output
-            String output = outputStream.toString()
+            String output = outputStream.toString();
 
             assertTrue(output.contains("===== Library Management System ====="));
             assertTrue(output.contains("Exiting... Goodbye!"));
