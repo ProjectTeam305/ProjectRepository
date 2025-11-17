@@ -29,5 +29,3 @@ jobs:
       - name: Fail intentionally on non-main branches
         if: github.ref != 'refs/heads/main'
         run: mvn verify -Dfail.build=true
-               - name: Force failure if needed
-               run: mvn validate && mvn exec:exec -Dexec.executable="bash" -Dexec.args="-c 'exit 1'"
