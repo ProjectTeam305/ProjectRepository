@@ -26,6 +26,7 @@ jobs:
       - name: Build and run tests
         run: mvn clean verify --file pom.xml
 
-      - name: Fail intentionally on non-main branches
+      # ✅ Fail intentionally only on non-main branches
+      - name: Fail intentionally
         if: github.ref != 'refs/heads/main'
         run: mvn verify -Dfail.build=true
