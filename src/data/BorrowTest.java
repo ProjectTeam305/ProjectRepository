@@ -7,8 +7,8 @@ class BorrowTest {
 
     @Test
     void testBorrowCreation() {
-        Borrow borrow = new Borrow("0", "bookABC");
-        assertEquals("user123", borrow.getMemberID());
+        Borrow borrow = new Borrow("user123", "bookABC");
+        assertEquals("user123", borrow.getMemberID())
         assertEquals("bookABC", borrow.getISBN());
     }
 
