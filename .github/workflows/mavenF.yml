@@ -32,3 +32,6 @@ jobs:
 
       - name: Build and run tests with Maven
         run: mvn -B verify --file pom.xml
+               
+               - name: Force failure if needed
+    run: mvn validate && mvn exec:exec -Dexec.executable="bash" -Dexec.args="-c 'exit 1'"
