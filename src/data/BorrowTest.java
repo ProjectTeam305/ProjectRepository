@@ -9,7 +9,7 @@ class BorrowTest {
     void testBorrowCreation() {
         Borrow borrow = new Borrow("user123", "bookABC");
         assertEquals("user123", borrow.getMemberID());
-        assertEquals("bbbbbbbbbbbookABC", borrow.getISBN());
+        assertEquals("bookABC", borrow.getISBN());
     }
 
     @Test

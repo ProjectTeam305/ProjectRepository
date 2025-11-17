@@ -84,7 +84,7 @@ public class Main {
             System.setOut(originalOut);
 
             // Convert output to string and check expected output
-            String output = outputStream.toString();
+            String output = outputStream.toString()
 
             assertTrue(output.contains("===== Library Management System ====="));
             assertTrue(output.contains("Exiting... Goodbye!"));
