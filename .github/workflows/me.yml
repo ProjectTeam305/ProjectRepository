@@ -1,0 +1,23 @@
+name: CI Build
+
+# 1. 'on:' defines the trigger events
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# 2. 'jobs:' defines the tasks
+jobs:
+  build:
+    # Defines the runner environment (e.g., Ubuntu, macOS, Windows)
+    runs-on: ubuntu-latest
+    
+    # Defines the sequence of steps for this job
+    steps:
+      # Checks out your repository code
+      - uses: actions/checkout@v4
+      
+      # Runs a simple command
+      - name: Say Hello
+        run: echo "The workflow has started running!"

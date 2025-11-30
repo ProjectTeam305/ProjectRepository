@@ -1,0 +1,11 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="MavenModelInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MavenModelVersionMissed" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MavenNewElementsInOldSchema" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MavenNewModelVersionInOldSchema" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MavenParentMissedGroupIdArtifactIdInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+    <inspection_tool class="MavenParentMissedVersionInspection" enabled="false" level="ERROR" enabled_by_default="false" />
+  </profile>
+</component>
